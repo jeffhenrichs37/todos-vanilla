@@ -8,9 +8,16 @@ body, html {
 	height: 100%;
 }
 
+h1 {
+	text-align: center;
+	margin: 65px auto;
+	position: absolute;
+	width: 100%;
+}
+
 .container {
 	width: 400px;
-	height: 300px;
+	height: 304px;
 	border: 1px solid black;
 	position: relative;
 	top: 50%;
@@ -24,7 +31,7 @@ body, html {
 }
 
 .input {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin: 5px;
 	display: inline-block;
 	width: 67%;
@@ -32,7 +39,7 @@ body, html {
 }
 
 .buttons {
-	border: 1px solid lightGreen;
+	/*border: 1px solid lightGreen;*/
 	margin: 5px;
 	display: inline-block;
 	width: 25%;
@@ -57,4 +64,38 @@ body, html {
 
 textarea {
 	margin: 3px;
+	padding: 2px 3px;
+}
+
+.display {
+	overflow: auto;
+	border: 1px solid blue;
+	height: 212px;
+}
+
+.task {
+	border: 1px solid black;
+	height: 68px;
+	margin: 1px;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+#task {
+	grid-column: 1 / span 2;
+	padding: 2px 5px;
+}
+
+#date {
+	padding: 3px 5px;
+}
+
+#checked {
+	text-align: right;
+	padding: 3px 5px;
+}
+
+#completed {
+	border: 1px solid black;
 }
